@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(to right, #aeb7d7, #486394);
+}
+div{
+    border: 2px double #ffffff;
+    margin: 10px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    box-shadow: 7px 7px #b1c7e5;
+}
+#principal{
+    width: 100px;
+    float: left;
+    border-radius: 50%;
+}
+div.especial h3{
+    font-family: 'Lora', serif;
+    text-shadow: 2px 2px #887b7b;
+}
