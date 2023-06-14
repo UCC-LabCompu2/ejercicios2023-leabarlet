@@ -98,7 +98,7 @@ function sumar() {
     num1 = document.getElementById("nums1").value;
     num2 = document.getElementById("nums2").value;
 
-    document.getElementsByName("sum_total")[0].value = Number(num1) +Number(num2);
+    document.getElementsByName("sum_total")[0].innerHTML = Number(num1) +Number(num2);
 }
 /**
  * Permite calcular la soustraccion
@@ -111,7 +111,7 @@ function sous() {
     num1 = document.getElementById("numr1").value;
     num2 = document.getElementById("numr2").value;
 
-    document.getElementsByName("res_total")[0].value = Number(num1) -Number(num2);
+    document.getElementsByName("res_total")[0].innerHTML = Number(num1) -Number(num2);
 }
 /**
  * Permite calcular la multiplicacion
@@ -124,7 +124,7 @@ function mult() {
     num1 = document.getElementById("numm1").value;
     num2 = document.getElementById("numm2").value;
 
-    document.getElementsByName("mul_total")[0].value = Number(num1) *Number(num2);
+    document.getElementsByName("mul_total")[0].innerHTML = Number(num1) *Number(num2);
 }
 /**
  * Permite calcular la division
@@ -137,6 +137,6 @@ function div() {
     num1 = document.getElementById("numd1").value;
     num2 = document.getElementById("numd2").value;
 
-    document.getElementsByName("div_total")[0].value = Number(num1) /Number(num2);
+    document.getElementsByName("div_total")[0].innerHTML = Number(num1) /Number(num2);
 }
 
