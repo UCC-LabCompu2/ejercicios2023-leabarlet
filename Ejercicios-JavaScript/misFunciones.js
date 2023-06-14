@@ -1,11 +1,10 @@
 /**
- * Descripción
- * @method Nombre de la función
- * @param Parámetro A
- * @param Parámetro B
- * @return Valor que retorna
+ * Permite convertir unidades entre metros, pulgadas, pies y yardas
+ * @method cambiarUnidades
+ * @param {string} id - Id de los elementos en html
+ * @param {number} value - Valor ingresado por el usuario
+ * @return
  */
-
 function cambiarUnidades(id, valor){
     if (isNaN(valor)) {
         alert("valor invalido");
