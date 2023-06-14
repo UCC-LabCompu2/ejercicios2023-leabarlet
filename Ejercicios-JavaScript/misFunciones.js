@@ -140,3 +140,23 @@ function div() {
     document.getElementsByName("div_total")[0].innerHTML = Number(num1) /Number(num2);
 }
 
+function cargarWeb(){
+    var cant, unidad, urlComp;
+
+    cant = document.getElementById("distancia").value;
+    unidad = document.getElementsByName("unidades")[0].value;
+
+    urlComp = "segundaWeb.html#" + cant +"#" +unidad;
+    window.open(urlComp);
+
+}
+
+function cargarResultado(){
+    var urlComp, can, uni;
+
+    urlComp = window.location.href.split("/")[5];
+    can = urlComp.split("#")[1];
+    uni = urlComp.split("#")[2];
+
+    document.getElementById("dist").value = can +  " " + uni;
+}
