@@ -71,3 +71,19 @@ let convertirGR=(id)=>{
     document.getElementById("radianes").value = rad;
     document.getElementById("grados").value = gr;
 }
+
+/**
+ * Permite visualizar y ocultar un dov centro de la pagina
+ * @method mostrar_ocultrar
+ * @param {string} valor - Valor asociado a un radio button del html
+ * @return Valor que retorna
+ */
+function mostrar_ocultar(valor){
+    console.log("El valor enviado a la funcion es "+valor);
+    if (valor==="val_mostrar"){
+        document.getElementById("unDiv").style.display='block';
+    }
+    else{
+        document.getElementById("unDiv").style.display='none';
+    }
+}
