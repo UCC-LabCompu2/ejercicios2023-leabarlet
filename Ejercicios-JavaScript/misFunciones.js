@@ -87,3 +87,56 @@ function mostrar_ocultar(valor){
         document.getElementById("unDiv").style.display='none';
     }
 }
+/**
+ * Permite calcular la suma
+ * @method sumar
+ * @param
+ * @return
+ */
+function sumar() {
+    var num1, num2;
+    num1 = document.getElementById("nums1").value;
+    num2 = document.getElementById("nums2").value;
+
+    document.getElementsByName("sum_total")[0].value = Number(num1) +Number(num2);
+}
+/**
+ * Permite calcular la soustraccion
+ * @method sous
+ * @param
+ * @return
+ */
+function sous() {
+    var num1, num2;
+    num1 = document.getElementById("numr1").value;
+    num2 = document.getElementById("numr2").value;
+
+    document.getElementsByName("res_total")[0].value = Number(num1) -Number(num2);
+}
+/**
+ * Permite calcular la multiplicacion
+ * @method mult
+ * @param
+ * @return
+ */
+function mult() {
+    var num1, num2;
+    num1 = document.getElementById("numm1").value;
+    num2 = document.getElementById("numm2").value;
+
+    document.getElementsByName("mul_total")[0].value = Number(num1) *Number(num2);
+}
+/**
+ * Permite calcular la division
+ * @method div
+ * @param
+ * @return
+ */
+function div() {
+    var num1, num2;
+    num1 = document.getElementById("numd1").value;
+    num2 = document.getElementById("numd2").value;
+
+    document.getElementsByName("div_total")[0].value = Number(num1) /Number(num2);
+}
+
