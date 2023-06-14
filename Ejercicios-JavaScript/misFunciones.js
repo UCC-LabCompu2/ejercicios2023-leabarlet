@@ -2,11 +2,11 @@
  * Permite convertir unidades entre metros, pulgadas, pies y yardas
  * @method cambiarUnidades
  * @param {string} id - Id de los elementos en html
- * @param {number} value - Valor ingresado por el usuario
+ * @param {number} valor - Valor ingresado por el usuario
  * @return
  */
 
-let conversorUnidades=(id,valor)=> {
+function cambiarUnidades(id,valor) {
     // creacion de variables
     let met, pul, pie, yar;
 
@@ -34,14 +34,14 @@ let conversorUnidades=(id,valor)=> {
         met = 0.9144*valor;
     }
     else if (id="pie"){
-        document.lasUnidades.unid_pulgada.value = 12*valor;
-        document.lasUnidades.unid_metro.value = 0.3048*valor;
-        document.lasUnidades.unid_yarda.value = 0.333333*valor;
+        pul = 12*valor;
+        met = 0.3048*valor;
+        yar = 0.333333*valor;
     }
     else if (id="pulgada") {
-        document.lasUnidades.unid_metro.value = 0.0254 * valor;
-        document.lasUnidades.unid_yarda.value = 0.0277778 * valor;
-        document.lasUnidades.unid_pie.value = 0.0833333 * valor;
+        met = 0.0254 * valor;
+        yar = 0.0277778 * valor;
+        pie = 0.0833333 * valor;
     }
     //Asignacion de las valores a los inputs de la UI
     document.lasUnidades.unid_metro.value =Math.round(met*100)/100;
