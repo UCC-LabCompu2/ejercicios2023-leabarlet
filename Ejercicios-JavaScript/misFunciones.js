@@ -140,6 +140,12 @@ function div() {
     document.getElementsByName("div_total")[0].innerHTML = Number(num1) /Number(num2);
 }
 
+/**
+ * Permite cargar la segunda pagina web con la distancia guardada
+ * @method cargarWeb
+ * @param
+ * @return
+ */
 function cargarWeb(){
     var cant, unidad, urlComp;
 
@@ -151,6 +157,12 @@ function cargarWeb(){
 
 }
 
+/**
+ * Permite cargar la distancia y unidad guardada y mostrarla
+ * @method cargarResultado
+ * @param
+ * @return
+ */
 function cargarResultado(){
     var urlComp, can, uni;
 
@@ -161,6 +173,12 @@ function cargarResultado(){
     document.getElementById("dist").value = can +  " " + uni;
 }
 
+/**
+ * Permite guardar la distancia y unidad con el local storage
+ * @method guardarLocalStorage
+ * @param
+ * @return
+ */
 function guardarLocalStorage(){
     let distancia ,unidad;
 
@@ -174,6 +192,12 @@ function guardarLocalStorage(){
 
 }
 
+/**
+ * Permite cargar y mostrar la distancia y unidad guardada en el local storage
+ * @method cargarLocalStorage
+ * @param
+ * @return
+ */
 function cargarLocalStorage(){
     let cant, un;
 
